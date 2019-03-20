@@ -2,9 +2,9 @@ class Ship
   attr_accessor :name, :type, :booty
   @@all = []
   def initialize(attribute_hash)
-    attribute_hash.each do |k, v|
-      self.send("#{k}=", v)
-    end
+    @name = attribute_hash[:name]
+    @type = attribute_hash[:type]
+    @booty = attribute_hash[:booty]
     @@all.push(self)
   end
 

@@ -18,7 +18,7 @@ module FormsLab
         Ship.new(ship_hash)
       end
       @all_ships=Ship.all
-      binding.pry
+    #  binding.pry
       erb :show
     end
 
